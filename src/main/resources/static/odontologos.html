@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Clinica Odontologica - Gestión de Odontólogos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="text/javascript" src="/js/odontologo/get_odontologo.js"></script>
+  <script type="text/javascript" src="/js/odontologo/update_odontologo.js"></script>
+  <script type="text/javascript" src="/js/odontologo/delete_odontologo.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">Clínica Odontológica</h1>
+    <nav>
+      <ul>
+        <li> <a href="/index.html">Inicio</a></li>
+        <li> <a href="/logout">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="odontologos">
+    <div class="container-odontologos">
+      <div class="action">
+        <a href="/alta-odontologo.html">Registrar Odontólogos</a>
+      </div>
+      <div class="table">
+        <h2>Lista Odontólogos</h2>
+        <table id="odontologoTable" class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Matrícula</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="odontologoTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12" style="
+            display: none;
+          " id="div_odontologo_updating">
+        <form id="update_odontologo_form">
+          <div class="form-group">
+            <label>Id:</label>
+            <input type="text" class="form-control" id="odontologo_id" readonly />
+          </div>
+          <div class="form-group">
+            <label>Nombre:</label>
+            <input type="text" class="form-control" placeholder="nombre" id="nombre" />
+          </div>
+          <div class="form-group">
+            <label>Apellido:</label>
+            <input type="text" class="form-control" placeholder="apellido" id="apellido" />
+          </div>
+          <div class="form-group">
+            <label>Matricula:</label>
+            <input type="text" class="form-control" placeholder="matricula" id="matricula" />
+          </div>
+
+          <button type="submit" class="action-bt">Modificar</button>
+        </form>
+        <div id="response" style="display: none; margin: 10px"></div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>

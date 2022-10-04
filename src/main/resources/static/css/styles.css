@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Estilos Generales */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-color: #222222;
+  color: #f3f3f3;
+  font-size: 0.65rem;
+  font-weight: 400;
+  line-height: 0.75rem;
+  padding: 5px 50px 5px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  border: 1px solid lightgrey;
+}
+
+h1 {
+  font-size: 16px;
+  color: white;
+}
+
+.container {
+  width: 55%;
+  margin: 100px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-pacientes-alta, .container-turnos, .container-odontologos {
+  width: 55%;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container-pacientes {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic {
+  width: 65%;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  color: black;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.topic:hover {
+  background-color: lightgrey;
+  border: 1px solid lightgray;
+}
+
+.action {
+  padding: 10px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+}
+
+.action a {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  text-align: right;
+}
+
+.action-bt {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px 0px;
+  text-align: right;
+}
+
+th {
+  padding: 15px;
+  background-color: lightgray;
+}
+
+table,
+td {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0px 18px;
+  border-bottom: 1px solid black;
+}
+
+.table {
+  width: 100%;
+}
+
+.odontologos h2,
+.pacientes h2,
+.turnos h2{
+  font-size: 16px;
+  margin: 20px 0px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.action a:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.action-bt:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+form {
+  margin: 20px 0px;
+
+}
+
+input, select {
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+input:focus, select:focus {
+  background-color:lightgrey;
+  border: 1px solid lightpink;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+}
+
+#div_odontologo_updating {
+  width: 30%;
+  margin: 0 auto;
+  background-color: lightgrey;
+  border: 1px solid black;
+  padding: 10px;
+}
+form#div_odontologo_updating {
+  width: 70%;
+}
+
+#div_paciente_updating {
+  width: 30%;
+  margin: 0 auto;
+  background-color:lightgray;
+  border: 1px solid black;
+  padding: 10px;
+}
+form#div_paciente_updating {
+  width: 70%;
+}
+
+p {
+  padding:10px;
+}
+
+.topic-403 {
+  width:50%;
+  margin: 100px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  color: black;
+}
+
+.topic-403 h2 {
+  font-size: 16px;
+  color: black;
+  padding: 15px;
+}
